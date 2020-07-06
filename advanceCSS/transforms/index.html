@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        div {
+            width: 120px;
+            height: 120px;
+            background-color: rgb(139, 40, 221);
+            transition-property: width;
+            font-size: 10px;
+            transition-duration: 1s;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div:hover {
+            transform: translate(100px, 200px);
+        }
+
+        .box {
+            transition: transform 1s;
+        }
+
+
+        div.box1:hover {
+            transform: rotate(90deg);
+        }
+
+        div.box2:hover {
+            transform: rotate(-90deg);
+        }
+
+        div.box3:hover {
+            transform: scale(5);
+        }
+
+         div.box4:hover {
+         transform: scale(.5);
+         }
+
+          div.box5:hover {
+          transform: scaleY(.5);
+          }
+
+       
+
+
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5,
+        .box6
+        {
+            margin: 35px auto;
+            transition: transform 1s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <p>box</p>
+    </div>
+    <div class="box1">
+        <p>rotate(90deg)</p>
+    </div>
+    <div class="box2">
+        <p>rotate(-90deg)</p>
+    </div>
+    <div class="box3">
+        <p>scale(5)</p>
+    </div>
+   <div class="box4">
+       <p>scale(.5)</p>
+   </div>
+    <div class="box5">
+        <p> scaleY(.5)</p>
+    </div>   
+</body>
+
+</html>
