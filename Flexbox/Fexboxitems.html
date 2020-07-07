@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FlexBox</title>
+    <style>
+        .container {
+            height: 700px;
+            margin-top: 50px;
+            padding: 20px 0;
+            background-color: rgb(32, 166, 199);
+            display: flex;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+
+        }
+
+        .container,
+        .cont {
+
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            /*  align-content: space-evenly;*/
+
+        }
+
+        .item {
+            width: 70px;
+            padding: 30px;
+            background-color: #b23eff;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+        }
+
+        .item-1 {
+            order: 1;
+        }
+
+        .item-2 {
+            order: -1;
+            align-self: flex-start;
+
+        }
+
+        .item-3 {
+            order: -1;
+            /* minus estends before */
+            align-self: flex-end;
+        }
+
+        .item-4 {
+            order: -1;
+            /* minus estends before */
+            align-self: stretch;
+        }
+
+        .item-4 {
+            order: -1;
+            /* minus estends before */
+            margin: 10px;
+            flex-grow: 1;
+        }
+
+        .item-5 {
+            order: -1;
+            /* minus estends before */
+            margin: 10px;
+            width: 200px;
+            flex-wrap: nowrap;
+            flex-shrink: 1;
+            /*work in ssimilar but oposites ways */
+        }
+
+        .item-6 {
+            order: -1;
+            /* minus estends before */
+            margin: 10px;
+            width: 200px;
+            flex-basis: auto;
+        }
+
+        .item-7 {
+            order: -1;
+            /* minus estends before */
+            margin: 10px;
+            width: 200px;
+            flex-basis: 100px;
+            flex:
+        }
+
+        .item-8 {
+            order: -1;   
+            width: 200px;
+            flex: 0 1 auto; /* flex-grow, shrink, basis*/
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container cont">
+        <div class="item item-1">A</div>
+        <div class="item item-2">B</div>
+        <div class="item item-3">C</div>
+        <div class="item item-4">D</div>
+        <div class="item item-5">E</div>
+        <div class="item item-6">F</div>
+        <div class="item item-7">G</div>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
