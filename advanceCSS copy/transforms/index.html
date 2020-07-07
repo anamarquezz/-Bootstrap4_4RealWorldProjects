@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        div {
+            width: 120px;
+            height: 120px;
+            background-color: rgb(139, 40, 221);
+            transition-property: width;
+            font-size: 10px;
+            transition-duration: 1s;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div:hover {
+            transform: translate(100px, 200px);
+        }
+
+        .box {
+            transition: transform 1s;
+        }
+
+
+        div.box1:hover {
+            transform: rotate(90deg);
+        }
+
+        div.box2:hover {
+            transform: rotate(-90deg);
+        }
+
+        div.box3:hover {
+            transform: scale(5);
+        }
+
+        div.box4:hover {
+            transform: scale(.5);
+        }
+
+        div.box5:hover {
+            transform: scaleY(.5);
+        }
+
+        div.box5:hover {
+            transform: scaleY(.5);
+        }
+
+        div.box6:hover {
+            transform: scaleX(.5);
+        }
+
+        div.box7:hover {
+            transform: skewX(30deg);
+        }
+
+        div.box8:hover {
+            transform: skewY(30deg);
+        }
+
+        div.box9:hover {
+            transform: skew(30deg, 20deg);
+        }
+
+        div.box10:hover {
+            transform: rotateX(180deg);
+        }
+
+        div.box11:hover {
+            transform: rotateY(180deg);
+        }
+
+        div.box12:hover {
+            transform: rotateZ(180deg);
+        }
+
+        div.box13:hover {   
+            transform: translate(200px,200px) scale(1.5,1.5);
+        }
+
+
+
+
+
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5,
+        .box6,
+        .box7,
+        .box8,
+        .box9,
+        .box10,
+        .box11,
+        .box12,
+        .box13 {
+            margin: 35px auto;
+            transition: transform 1s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <p>transform 1s</p>
+    </div>
+    <div class="box1">
+        <p> rotate(90deg);</p>
+    </div>
+    <div class="box2">
+        <p>rotate(-90deg);</p>
+    </div>
+    <div class="box3">
+        <p>scale(5);</p>
+    </div>
+    <div class="box4">
+        <p> scale(.5);</p>
+    </div>
+    <div class="box5">
+        <p> scaleY(.5);</p>
+    </div>
+    <div class="box6">
+        <p> scaleX(.5);</p>
+    </div>
+    <div class="box7">
+        <p> skewX(30deg);</p>
+    </div>
+    <div class="box8">
+        <p>skewX(30deg); </p>
+    </div>
+    <div class="box9">
+        <p>skewY(30deg); </p>
+    </div>
+    <div class="box10">
+        <p> skew(30deg, 20deg);</p>
+    </div>
+    <div class="box11">
+        <p> rotateX(180deg);</p>
+    </div>
+    <div class="box12">
+        <p>rotateY(180deg);</p>
+    </div>
+    <div class="box12">
+        <p> rotateZ(180deg);</p>
+    </div>
+    <div class="box13">
+        <p> translateX(200px,200px) scale(1.5,1.5)</p>
+    </div>
+  
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: hotpink;
+            position: relative;
+            margin: 10px;
+        }
+
+        .box1 {
+            animation-name: anim;
+            animation-duration: 4s
+        }
+
+        .box2 {
+            animation-name: anim2;
+            animation-duration: 1s
+        }
+
+        @keyframes anim {
+            from {
+                left: 0;
+                top: 0;
+                background-color: plum;
+            }
+
+            to {
+                left: 500px;
+                top: 0;
+                background-color: rebeccapurple;
+            }
+        }
+
+
+        @keyframes anim2 {
+            0% {
+                left: 0;
+                top: 0;
+                background-color: plum;
+            }
+
+            100% {
+                left: 500px;
+                top: 0;
+                background-color: rebeccapurple;
+            }
+        }
+
+        @keyframes anim3 {
+            0% {
+                left: 0;
+                top: 0;
+                background-color: plum;
+            }
+
+            100% {
+                left: 500px;
+                top: 0;
+                background-color: rebeccapurple;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box1">
+    </div>
+
+    <div class="box2">
+    </div>
+
+    <div class="box3">
+    </div>
+
+</body>
+
+</html>

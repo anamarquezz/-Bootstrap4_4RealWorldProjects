@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 
+      properties que existen:
+      transistion-property;
+      transition-duration
+      transition-delay
+      transition-timing-function
+      */
+
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(212, 163, 202);
+            transition-property: width;
+            transition-duration: 1s;
+            margin: 10px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div:hover {
+            width: 400px;
+            background-color: rgb(185, 14, 99);
+        }
+
+
+
+        .box {
+            transition-delay: 1s;
+        }
+
+
+        .box1 {
+            transition-timing-function: ease;
+        }
+
+        .box2 {
+            transition-timing-function: ease-in;
+        }
+
+
+
+        .box3 {
+            transition-timing-function: ease-out;
+        }
+
+
+        .box4 {
+            transition-timing-function: ease-in-out;
+        }
+
+        .box5 {
+            /* cubic-bezier.com */
+            transition-timing-function: cubit-bezier(.02, .97, .67, .32);
+        }
+
+        .box6 {
+            transition: width 1s ease-in, background-color 5s;
+        }
+
+        .box7 {
+            transition: all 1s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <p>box</p>
+    </div>
+    <div class="box1">
+        <p>box1</p>
+    </div>
+    <div class="box2">
+        <p>box2</p>
+    </div>
+    <div class="box3">
+        <p>box3</p>
+    </div>
+    <div class="box4">
+        <p>box4</p>
+    </div>
+    <div class="box5">
+        <p>box5</p>
+    </div>
+    <div class="box6">
+        <p>box6</p>
+    </div>
+    <div class="box7">
+        <p>box7</p>
+    </div>
+</body>
+
+</html>
