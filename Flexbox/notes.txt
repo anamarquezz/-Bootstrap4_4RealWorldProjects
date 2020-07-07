@@ -1,0 +1,46 @@
+floar:
+-Less popular
+-Inconvenient way
+-Need much effort
+
+
+Flexbox:
+-Extremely popular
+-Easy & convinient
+-Flexible
+
+
+What is?
+-new and modern technique
+-improves the way of layout
+-Allows us to avoid uses of floats 
+-Fuly supported in all modern web browsers
+
+CSS Flexible layout Module
+-It is use to manage alignment of items, directions and order in the container.
+
+Main contest.
+
+----Properties ---------------------
+
+-----FLEX CONTAINER-----
+display:flex;
+flex-direction:     row || column || row-reverse ;
+flex-wrap:          nowrap || wrap  ;
+flex-flow:          row wrap ;
+justify-content:    flext-start || flex-ed || center || space-between || space-round || space-evenly ;
+align-items:        strech || flex-start || flex-end ;
+align-content:      strech || flext-start || flex-end ;
+
+
+-----FLEX ITEMS-----
+order:          0 || (number)
+flex-self:      auto || strech || flex-start || flex-end || center || baseline 
+flex-grow:      0 || (number)
+flex-basis:     auto || (length)
+flex-shrink:    1 || number
+flex: 0 1 auto
+
+
+
+

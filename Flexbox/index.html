@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FlexBox</title>
+    <style>
+        .container {
+            height: 700px;
+            margin-top: 50px;
+            padding: 20px 0;
+            background-color: rgb(163, 103, 135);
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            display: flex;
+        }
+
+        .container {
+            flex-direction: row
+                /*main axis horizontal;*/
+        }
+
+        .containerreverse {
+            flex-direction: row-reverse
+                /*main axis horizontal;*/
+
+        }
+
+        .containerinlineflex {
+            display: inline-flex;
+        }
+
+        .containercolumn {
+            flex-direction: column;
+        }
+
+        .containercolumnreverse {
+            flex-direction: column-reverse;
+        }
+
+
+
+        .containerrowwrap {
+            flex-direction: row;
+            flex-wrap: wrap;
+            /*  flex-flow:row wrap same */
+        }
+
+        .containerrowwrapcontentcenter {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .containerrowwrapcontentstart {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .containerrowwrapcontentend {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        .containerrowwrapcontentspacebetween {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+
+
+        .containerrowwrapcontentspaceevenly {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .containerrowwrapcontentspaceevenlyalignitemstrech {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: stretch;
+
+            background-color: rgb(104, 103, 163);
+        }
+
+        .containerrowwrapcontentspaceevenlyalignitemcenter {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+
+            background-color: rgb(104, 103, 163);
+        }
+
+
+        .containerrowwrapcontentcolumnspaceevenlyalignitemstart {
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+
+            background-color: rgb(223, 160, 78);
+        }
+
+        .containerrowwrapcontentcolumnspaceevenlyalignitemstartaligncontentspacearound{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            align-content: space-around;
+       
+            background-color: rgb(154, 230, 211);
+        }
+
+        .containerrowwrapcontentcolumnspaceevenlyalignitemcenter {
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+
+            background-color: rgb(223, 160, 78);
+        }
+
+        .containerrowwrapcontentcolumnspaceevenlyalignitemstart {
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: flex-end;
+
+            background-color: rgb(223, 160, 78);
+        }
+
+        .containerrowwrapcontentspaceevenlyalignitembaseline {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: baseline;
+
+            background-color: rgb(103, 163, 103);
+        }
+
+        .containerrowwrapcontentspaceevenlyalignitemflexstart {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            background-color: rgb(163, 103, 135);
+            background-color: rgb(104, 103, 163);
+        }
+
+        .containerrowwrapcontentspaceevenlyalignitemflexend {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: flex-end;
+            background-color: rgb(104, 103, 163);
+        }
+
+        .containerrowwrapcontentspacearound {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+
+        .item {
+            width: 70px;
+            padding: 30px;
+            margin: 10px;
+            background-color: #71a6a8;
+        }
+
+        .item-1 {
+            font-size: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-1">A</div>
+        <div class="item item-2">B</div>
+        <div class="item item-3">C</div>
+        <div class="item item-4">D</div>
+        <div class="item item-5">E</div>
+    </div>
+    <div class="container containerreverse">
+        <div class="item item-1">A</div>
+        <div class="item item-2">B</div>
+        <div class="item item-3">C</div>
+        <div class="item item-4">D</div>
+        <div class="item item-5">E</div>
+    </div>
+
+    <div class="container containerrowwrap">
+        <div class="item item-1">A</div>
+        <div class="item item-2">B</div>
+        <div class="item item-3">C</div>
+        <div class="item item-4">D</div>
+        <div class="item item-5">E</div>
+    </div>
+
+    <div class="container containerinlineflex">
+        <div class="item item-1">A</div>
+        <div class="item item-2">B</div>
+        <div class="item item-3">C</div>
+        <div class="item item-4">D</div>
+        <div class="item item-5">E</div>
+    </div>
+    <div class="container containercolumn">
+        <div class="item item-1">A</div>
+        <div class="item item-2">B</div>
+        <div class="item item-3">C</div>
+        <div class="item item-4">D</div>
+        <div class="item item-5">E</div>
+    </div>
+    <div class="container containercolumnreverse">
+        <div class="item item-1">A</div>
+        <div class="item item-2">B</div>
+        <div class="item item-3">C</div>
+        <div class="item item-4">D</div>
+        <div class="item item-5">E</div>
+    </div>
+    <div class="container containerrowwrapcontent">
+        <div class="item item-1">A</div>
+        <div class="item item-2">B</div>
+        <div class="item item-3">C</div>
+        <div class="item item-4">D</div>
+        <div class="item item-5">E</div>
+    </div>
+    <div class="container containerrowwrapcontentcenter">
+        <div class="item item-1">A</div>
+        <div class="item item-2">B</div>
+        <div class="item item-3">C</div>
+        <div class="item item-4">D</div>
+        <div class="item item-5">E</div>
+    </div>
+    <div class="container containerrowwrapcontentstart">
+        <div class="item item-1">A</div>
+        <div class="item item-2">B</div>
+        <div class="item item-3">C</div>
+        <div class="item item-4">D</div>
+        <div class="item item-5">E</div>
+    </div>
+    <div class="container containerrowwrapcontentend">
+        <div class="item item-1">A</div>
+        <div class="item item-2">B</div>
+        <div class="item item-3">C</div>
+        <div class="item item-4">D</div>
+        <div class="item item-5">E</div>
+    </div>
+    <div class="container containerrowwrapcontentspacebetween">
+        <div class="item item-1">A</div>
+        <div class="item item-2">B</div>
+        <div class="item item-3">C</div>
+        <div class="item item-4">D</div>
+        <div class="item item-5">E</div>
+    </div>
+    <div class="container containerrowwrapcontentspaceevenly">
+        <div class="item item-1">A</div>
+        <div class="item item-2">B</div>
+        <div class="item item-3">C</div>
+        <div class="item item-4">D</div>
+        <div class="item item-5">E</div>
+    </div>
+
+    <div class="container containerrowwrapcontentspaceevenlyalignitemstrech">
+        <div class="item item-1">A</div>
+        <div class="item item-2">B</div>
+        <div class="item item-3">C</div>
+        <div class="item item-4">D</div>
+        <div class="item item-5">E</div>
+    </div>
+    <div class="container containerrowwrapcontentspaceevenlyalignitemcenter">
+        <div class="item item-1">A</div>
+        <div class="item item-2">B</div>
+        <div class="item item-3">C</div>
+        <div class="item item-4">D</div>
+        <div class="item item-5">E</div>
+    </div>
+    <div class="container containerrowwrapcontentcolumnspaceevenlyalignitemcenter">
+        <div class="item item-1">A</div>
+        <div class="item item-2">B</div>
+        <div class="item item-3">C</div>
+        <div class="item item-4">D</div>
+        <div class="item item-5">E</div>
+    </div>
+    <div class="container containerrowwrapcontentcolumnspaceevenlyalignitemstart">
+        <div class="item item-1">A</div>
+        <div class="item item-2">B</div>
+        <div class="item item-3">C</div>
+        <div class="item item-4">D</div>
+        <div class="item item-5">E</div>
+    </div>
+    <div class="container containerrowwrapcontentcolumnspaceevenlyalignitemstartaligncontentspacearound">
+        <div class="item item-1">A</div>
+        <div class="item item-2">B</div>
+        <div class="item item-3">C</div>
+        <div class="item item-4">D</div>
+        <div class="item item-5">E</div>
+    </div>
+    <div class="container containerrowwrapcontentspaceevenlyalignitembaseline">
+        <div class="item item-1">A</div>
+        <div class="item item-2">B</div>
+        <div class="item item-3">C</div>
+        <div class="item item-4">D</div>
+        <div class="item item-5">E</div>
+    </div>
+
+
+    <div class="container containerrowwrapcontentspaceevenlyalignitemflexstart">
+        <div class="item item-1">A</div>
+        <div class="item item-2">B</div>
+        <div class="item item-3">C</div>
+        <div class="item item-4">D</div>
+        <div class="item item-5">E</div>
+    </div>
+
+    <div class="container containerrowwrapcontentspaceevenlyalignitemflexend">
+        <div class="item item-1">A</div>
+        <div class="item item-2">B</div>
+        <div class="item item-3">C</div>
+        <div class="item item-4">D</div>
+        <div class="item item-5">E</div>
+    </div>
+
+
+    <div class="container containerrowwrapcontentspacearound">
+        <div class="item item-1">A</div>
+        <div class="item item-2">B</div>
+        <div class="item item-3">C</div>
+        <div class="item item-4">D</div>
+        <div class="item item-5">E</div>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
