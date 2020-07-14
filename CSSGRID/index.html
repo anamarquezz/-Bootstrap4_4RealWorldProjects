@@ -12,11 +12,90 @@
             background-color: #ddd;
             margin: 40px auto;
             display: grid;
-            grid-template-rows: 150px 150px;
-            grid-template-columns: 150px 150px 150px;
-            /*grid-row-gap:30px;
+            margin-bottom: 150px;
+
+            /* grid-row-gap:30px;
             grid-column-gap: 50px;
             grid-gap:30px 50px; */
+            grid-gap: 30px;
+        }
+
+        .container1 {
+            grid-template-rows: 150px 150px;
+            grid-template-columns: 150px 150px 150px;
+            grid-gap: 30px;
+        }
+
+        .container2 {
+            grid-template-rows: 150px 150px;
+            grid-template-columns: 150px 150px auto;
+            grid-gap: 30px;
+        }
+
+        .container3 {
+            grid-template-rows: 150px 150px;
+            grid-template-columns: 150px auto auto;
+            grid-gap: 30px;
+        }
+
+        .container4 {
+            /* Fractional unit*/
+            grid-template-rows: 150px 150px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 30px;
+        }
+
+        .container5 {
+            /* Fractional unit*/
+            grid-template-rows: 150px 150px;
+            grid-template-columns: 3fr 2fr 1fr;
+            grid-gap: 30px;
+        }
+
+        .container6 {
+            /* Fractional unit*/
+            grid-template-rows: 150px 1fr;
+            grid-template-columns: 3fr 2fr 1fr;
+            grid-gap: 30px;
+        }
+
+        .container7 {
+            /* Fractional unit*/
+            grid-template-rows: 150px 1fr;
+            height: 450px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 30px;
+        }
+
+        .container8 {
+            /* Fractional unit*/
+            grid-template-rows: 2fr 1fr;
+            height: 450px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 30px;
+        }
+
+        .container9 {
+            /* Fractional unit*/
+            grid-template-rows: 2fr 1fr;
+            height: 450px;
+            grid-template-columns:  repeat(2, 1fr);
+            grid-gap: 30px;
+        }
+
+         .container10 {
+            /* Fractional unit*/
+            grid-template-rows: 2fr 1fr;
+            height: 450px;
+            grid-template-columns: 50% repeat(2, 1fr);
+            grid-gap: 30px;
+        }
+        
+         .container11 {
+            /* Fractional unit*/
+            grid-template-rows: 2fr 1fr;
+            height: 450px;
+            grid-template-columns: 50vw repeat(2, 1fr);
             grid-gap: 30px;
         }
 
@@ -54,7 +133,115 @@
 
 <body>
     <!-- .container>.item.item-${item $}  -->
-    <div class="container">
+    <div class="container container1">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
+
+    <div class="container container2">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
+
+    <div class="container container3">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
+
+    <div class="container container3">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
+
+    <div class="container container4">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
+
+    <div class="container container5">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
+
+    <div class="container container6">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
+
+    <div class="container container7">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
+
+    <div class="container container8">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
+
+    <div class="container container9">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
+
+    <div class="container container10">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
+
+    <div class="container container11">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
+
+    <div class="container container12">
         <div class="item item-1">item 1</div>
         <div class="item item-2">item 2</div>
         <div class="item item-3">item 3</div>
