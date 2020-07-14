@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            width: 800px;
+            background-color: #ddd;
+            margin: 40px auto;
+            display: grid;
+            grid-gap: 30px;
+            margin-bottom: 150px;
+
+        }
+
+        .container1 {
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
+           
+        }
+
+        .container2 {
+           
+        }
+
+        .container3 {}
+
+        .container4 {}
+
+        .container5 {}
+
+        .container6 {}
+
+        .container7 {}
+
+        .container8 {
+            /* Fractional unit*/
+        }
+
+        .container9 {}
+
+        .container10 {
+            /* Fractional unit*/
+        }
+
+        .container11 {
+            /* Fractional unit*/
+        }
+
+
+        .item {
+            padding: 30px;
+            font-size: 30px;
+            color: #fff;
+        }
+
+         .item-1 {
+            background-color: orangered;
+           /* 
+           
+           
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            ----------------
+            */
+             grid-column-start: 3;
+             grid-column-end: 4;
+             grid-row-start: 2;
+             grid-row-end: 3;         
+
+        }       
+
+        .item-2 {
+            background-color: olivedrab;
+            grid-area: 2 / 2 / 3 / 3;
+            z-index: 10;
+          
+        }
+
+        .item-3 {
+            background-color: royalblue;
+            grid-column: 1 / -1;
+            grid-row: 1 / -1;
+        }
+
+        .item-4 {
+            background-color: palevioletred;
+        }
+
+        .item-5 {
+            background-color: goldenrod;
+        }
+
+        .item-6 {
+            background-color: blueviolet;
+            grid-column: 1 / span 3;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .container>.item.item-${item $}  -->
+    <div class="container container1">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
+
+    <div class="container container2">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
+
+    <div class="container container3">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
+
+    <div class="container container3">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
+
+    <div class="container container4">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
+
+    <div class="container container5">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
+
+    <div class="container container6">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
+
+    <div class="container container7">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
+
+    <div class="container container8">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
+
+    <div class="container container9">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
+
+    <div class="container container10">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
+
+    <div class="container container11">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
+
+    <div class="container container12">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
+</body>
+
+</html>
