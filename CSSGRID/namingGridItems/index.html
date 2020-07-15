@@ -16,6 +16,18 @@
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-gap: 1rem;
+            margin-bottom: 15rem;
+        }
+
+        .container2 {
+            width: 800px;
+            height: 500px;
+            background-color: #efefef;
+            margin: auto;
+            display: grid;
+            grid-template-rows: [header-start]1fr [header-end] 1fr [main-start] 1fr [main-end box-start] 1fr [box-end footer-start] 1fr [footer-end];
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 1rem;
         }
 
         .container div {
@@ -60,6 +72,62 @@
             grid-column: 1 / -1;
             grid-row: 5 / -1;
         }
+
+        .container2 {
+            width: 800px;
+            margin-top:25rem;
+            height: 500px;
+            background-color: #efefef;
+            margin: auto;
+            display: grid;
+            grid-template-rows: [header-start] 1fr [header-end main-start] 1fr 1fr [main-end box-start] 1fr [box-end footer-start] 1fr [footer-end];
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 1rem;
+        }
+
+        .container2 div {
+            background-color: rgb(129, 74, 120);
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 1rem;
+          
+            color: #fff
+        }
+
+        .header0 {
+            grid-column: 1 / -1;
+            grid-row: header-start / header-end;
+        }
+
+        .sidebar0 {
+            grid-column: 1 / 2;
+            grid-row: main-start / box-end;
+        }
+
+        .main0 {
+            grid-column: 2 / -1;
+            grid-row: main-start / main-end;
+        }
+
+        .box-01 {
+            grid-column: 2 / 3;
+            grid-row: box-start / box-end;
+        }
+
+        .box-02 {
+            grid-column: 3 / 4;
+           grid-row: box-start / box-end;
+        }
+
+        .box-03 {
+            grid-column: 4 / -1;
+            grid-row: box-start / box-end;
+        }
+
+        .footer0 {
+            grid-column: 1 / -1;
+            grid-row: footer-start / footer-end;
+        }
     </style>
 </head>
 
@@ -68,13 +136,25 @@
         <div class="header">Header</div>
         <div class="sidebar">Sidebar</div>
         <div class="main">Main</div>
-
         <!--  .box-${Box $}*3 -->
 
         <div class="box-1">Box 1</div>
         <div class="box-2">Box 2</div>
         <div class="box-3">Box 3</div>
         <div class="footer">Footer</div>
+
+    </div>
+
+
+    <div class="container2">
+        <div class="header0">header0</div>
+        <div class="sidebar0">sidebar0</div>
+        <div class="main0">main0</div>
+        <!--  .box-${Box $}*3 -->
+        <div class="box-01">Box 01</div>
+        <div class="box-02">Box 02</div>
+        <div class="box-03">Box 03</div>
+        <div class="footer0">Footer0</div>
 
     </div>
 
