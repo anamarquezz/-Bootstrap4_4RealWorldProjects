@@ -20,6 +20,38 @@
             grid-gap: 30px;
         }
 
+        .container-1 {
+            width: 800px;
+            background-color: #ddd;
+            margin: 40px auto;
+            display: grid;
+            /*grid-template-rows: 150px 150px;*/
+            grid-template-rows: 150px 1fr;
+            grid-template-columns: 1fr 1fr 1fr;          
+            /*grid-template-columns: 150px auto auto; 
+            grid-template-columns: 150px 150px auto; */
+            grid-gap: 30px;
+        }
+
+        .container-2 {
+            width: 800px;
+            height: 450px;
+            background-color: #ddd;
+            margin: 40px auto;
+            margin-bottom: 10rem;
+            display: grid;
+            /*grid-template-rows: 150px 150px;*/
+            grid-template-rows: 2fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;     
+            /*
+             grid-template-column:50vw repeat(2,1);
+            grid-template-column:50% repeat(2,1);
+            grid-template-columns: repeat(3x1fr);     
+            grid-template-columns: 150px auto auto; 
+            grid-template-columns: 150px 150px auto; */
+            grid-gap: 30px;
+        }
+
         .item {
             padding: 30px;
             font-size: 30px;
@@ -53,7 +85,25 @@
 </head>
 
 <body>
+
+    <div class="container-2">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
     <!-- .container>.item.item-${item $}  -->
+    <div class="container-1">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-5">item 5</div>
+        <div class="item item-6">item 6</div>
+    </div>
+
     <div class="container">
         <div class="item item-1">item 1</div>
         <div class="item item-2">item 2</div>
