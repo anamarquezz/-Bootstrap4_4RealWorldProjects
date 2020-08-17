@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+
+
+
+    <style>
+        .container {
+            width: 90%;
+            background-color: #efefef;
+            margin: 40px auto ;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,80px)        
+
+        }
+
+        .container2 {
+            width: 90%;
+            background-color: #efefef;
+            margin: 40px auto ;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr))        
+
+        }
+
+        .item {
+            font-size: 2rem;
+            background-color: rgb(152, 93, 160);
+            color: #fff;
+            text-align: center;
+        }
+
+        .item1 {
+            font-size: 2rem;
+            background-color: rgb(85, 138, 223);
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div.container>div.item${item $}*8 -->
+    <div class="container content1">
+        <div class="item ">item 1</div>
+        <div class="item ">item 2</div>
+        <div class="item ">item 3</div>
+        <div class="item ">item 4</div>
+        <div class="item ">item 5</div>
+        <div class="item ">item 6</div>
+        <div class="item ">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+
+    <div class="container2 ">
+        <div class="item1 ">item 1</div>
+        <div class="item1 ">item 2</div>
+        <div class="item1 ">item 3</div>
+        <div class="item1 ">item 4</div>
+        <div class="item1 ">item 5</div>
+        <div class="item1 ">item 6</div>
+        <div class="item1 ">item 7</div>
+        <div class="item1">item 8</div>
+    </div>
+
+   
+
+
+
+
+</body>
+
+</html>

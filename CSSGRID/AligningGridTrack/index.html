@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+
+
+
+    <style>
+        .container {
+            width: 800px;
+            height: 600px;
+            background-color: #efefef;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 150px);
+            grid-template-rows: repeat(4, 100px);
+            grid-gap: 1rem;
+
+        }
+
+        .item {
+            font-size: 2rem;
+            background-color: rgb(152, 93, 160);
+            color: #fff;
+            text-align: center;
+        }
+
+        .content1 {
+            justify-content: start;
+        }
+
+        .content2 {
+            justify-content: center;
+        }
+
+        .content3 {
+            justify-content: end;
+        }
+
+        .content4 {
+            justify-content: space-between;
+        }
+
+        .content5 {
+            justify-content: space-around;
+        }
+
+        .content6 {
+            justify-content: space-evenly;
+        }
+
+        .content7 {
+            justify-content: space-evenly;
+            align-content: start;
+        }
+
+        .content8 {
+            justify-content: space-evenly;
+            align-content: center;
+            background: rgb(216, 251, 238);
+        }
+
+        .content9 {
+            justify-content: space-evenly;
+            align-content: end;
+        }
+
+        .content10 {
+            justify-content: space-evenly;
+            align-content: space-between;
+            margin-top: 2em;
+        }
+
+        .content11 {
+            justify-content: space-evenly;
+            align-content: space-around;
+            margin-top: 2em;
+        }
+
+        .content12 {
+            justify-content: space-evenly;
+            align-content: space-evenly;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div.container>div.item${item $}*8 -->
+    <div class="container content1">
+        <div class="item ">item 1</div>
+        <div class="item ">item 2</div>
+        <div class="item ">item 3</div>
+        <div class="item ">item 4</div>
+        <div class="item ">item 5</div>
+        <div class="item ">item 6</div>
+        <div class="item ">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+
+    <div class="container content2">
+        <div class="item ">item 1</div>
+        <div class="item ">item 2</div>
+        <div class="item ">item 3</div>
+        <div class="item ">item 4</div>
+        <div class="item ">item 5</div>
+        <div class="item ">item 6</div>
+        <div class="item ">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+
+    <div class="container content3">
+        <div class="item ">item 1</div>
+        <div class="item ">item 2</div>
+        <div class="item ">item 3</div>
+        <div class="item ">item 4</div>
+        <div class="item ">item 5</div>
+        <div class="item ">item 6</div>
+        <div class="item ">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+
+    <div class="container content4">
+        <div class="item ">item 1</div>
+        <div class="item ">item 2</div>
+        <div class="item ">item 3</div>
+        <div class="item ">item 4</div>
+        <div class="item ">item 5</div>
+        <div class="item ">item 6</div>
+        <div class="item ">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+
+    <div class="container content5">
+        <div class="item ">item 1</div>
+        <div class="item ">item 2</div>
+        <div class="item ">item 3</div>
+        <div class="item ">item 4</div>
+        <div class="item ">item 5</div>
+        <div class="item ">item 6</div>
+        <div class="item ">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+
+    <div class="container content6">
+        <div class="item ">item 1</div>
+        <div class="item ">item 2</div>
+        <div class="item ">item 3</div>
+        <div class="item ">item 4</div>
+        <div class="item ">item 5</div>
+        <div class="item ">item 6</div>
+        <div class="item ">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+
+    <div class="container content7">
+        <div class="item ">item 1</div>
+        <div class="item ">item 2</div>
+        <div class="item ">item 3</div>
+        <div class="item ">item 4</div>
+        <div class="item ">item 5</div>
+        <div class="item ">item 6</div>
+        <div class="item ">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+
+
+    <div class="container content8">
+        <div class="item ">item 1</div>
+        <div class="item ">item 2</div>
+        <div class="item ">item 3</div>
+        <div class="item ">item 4</div>
+        <div class="item ">item 5</div>
+        <div class="item ">item 6</div>
+        <div class="item ">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+
+    
+    <div class="container content9">
+        <div class="item ">item 1</div>
+        <div class="item ">item 2</div>
+        <div class="item ">item 3</div>
+        <div class="item ">item 4</div>
+        <div class="item ">item 5</div>
+        <div class="item ">item 6</div>
+        <div class="item ">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+
+    
+    <div class="container content10">
+        <div class="item ">item 1</div>
+        <div class="item ">item 2</div>
+        <div class="item ">item 3</div>
+        <div class="item ">item 4</div>
+        <div class="item ">item 5</div>
+        <div class="item ">item 6</div>
+        <div class="item ">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+
+    
+    <div class="container content11">
+        <div class="item ">item 1</div>
+        <div class="item ">item 2</div>
+        <div class="item ">item 3</div>
+        <div class="item ">item 4</div>
+        <div class="item ">item 5</div>
+        <div class="item ">item 6</div>
+        <div class="item ">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+
+    <div class="container content12">
+        <div class="item ">item 1</div>
+        <div class="item ">item 2</div>
+        <div class="item ">item 3</div>
+        <div class="item ">item 4</div>
+        <div class="item ">item 5</div>
+        <div class="item ">item 6</div>
+        <div class="item ">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
